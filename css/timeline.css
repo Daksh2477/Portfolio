@@ -1,0 +1,260 @@
+/*==================================================
+ Portfolio V2
+ Experience Timeline
+==================================================*/
+
+.timeline{
+
+    padding:120px 0;
+
+}
+
+.timeline-header{
+
+    text-align:center;
+
+    margin-bottom:80px;
+
+}
+
+.timeline-header span{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:rgba(79,140,255,.08);
+
+    border:1px solid rgba(79,140,255,.15);
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.timeline-header h2{
+
+    font-size:3.2rem;
+
+    margin-bottom:20px;
+
+}
+
+.timeline-header p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.9;
+
+    color:var(--text-light);
+
+}
+
+/*==========================
+TIMELINE
+==========================*/
+
+.timeline-wrapper{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.timeline-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    transform:translateX(-50%);
+
+    background:linear-gradient(
+
+    #4F8CFF,
+
+    #8B5CF6,
+
+    #22D3EE
+
+    );
+
+    border-radius:20px;
+
+}
+
+/*==========================
+ITEM
+==========================*/
+
+.timeline-item{
+
+    position:relative;
+
+    width:50%;
+
+    padding:25px 40px;
+
+}
+
+.timeline-item.left{
+
+    left:0;
+
+}
+
+.timeline-item.right{
+
+    left:50%;
+
+}
+
+/*==========================
+CARD
+==========================*/
+
+.timeline-card{
+
+    position:relative;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.timeline-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(79,140,255,.35);
+
+    box-shadow:0 20px 60px rgba(79,140,255,.15);
+
+}
+
+/*==========================
+DOT
+==========================*/
+
+.timeline-dot{
+
+    position:absolute;
+
+    top:40px;
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    background:#4F8CFF;
+
+    border:5px solid #050816;
+
+    z-index:10;
+
+}
+
+.timeline-item.left .timeline-dot{
+
+    right:-11px;
+
+}
+
+.timeline-item.right .timeline-dot{
+
+    left:-11px;
+
+}
+
+/*==========================
+TEXT
+==========================*/
+
+.timeline-card h3{
+
+    font-size:1.5rem;
+
+    margin-bottom:10px;
+
+}
+
+.timeline-card h4{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+.timeline-card p{
+
+    color:var(--text-light);
+
+    line-height:1.9;
+
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:992px){
+
+.timeline-wrapper::before{
+
+left:25px;
+
+}
+
+.timeline-item{
+
+width:100%;
+
+left:0 !important;
+
+padding-left:70px;
+
+padding-right:0;
+
+margin-bottom:40px;
+
+}
+
+.timeline-dot{
+
+left:14px !important;
+
+right:auto !important;
+
+}
+
+}

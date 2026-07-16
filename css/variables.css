@@ -1,0 +1,131 @@
+/*==================================================
+Portfolio V4
+variables.css
+==================================================*/
+
+:root{
+
+/*=========================
+PRIMARY COLORS
+=========================*/
+
+--primary:#4F8CFF;
+
+--secondary:#8B5CF6;
+
+--accent:#22D3EE;
+
+/*=========================
+BACKGROUND
+=========================*/
+
+--bg:#081018;
+
+--bg-light:#0F172A;
+
+--card-bg:rgba(255,255,255,.05);
+
+/*=========================
+TEXT
+=========================*/
+
+--text:#FFFFFF;
+
+--text-light:#B8C2D1;
+
+--heading:#FFFFFF;
+
+/*=========================
+BORDER
+=========================*/
+
+--border:rgba(255,255,255,.08);
+
+--border-hover:rgba(79,140,255,.35);
+
+/*=========================
+GRADIENTS
+=========================*/
+
+--gradient:linear-gradient(
+135deg,
+#4F8CFF,
+#8B5CF6
+);
+
+--gradient2:linear-gradient(
+135deg,
+#4F8CFF,
+#8B5CF6,
+#22D3EE
+);
+
+/*=========================
+SHADOWS
+=========================*/
+
+--shadow-sm:0 10px 25px rgba(0,0,0,.15);
+
+--shadow-md:0 20px 50px rgba(79,140,255,.15);
+
+--shadow-lg:0 30px 80px rgba(79,140,255,.25);
+
+/*=========================
+BORDER RADIUS
+=========================*/
+
+--radius-sm:12px;
+
+--radius:20px;
+
+--radius-lg:30px;
+
+/*=========================
+TRANSITIONS
+=========================*/
+
+--transition:.35s ease;
+
+}
+
+/*==================================================
+LIGHT THEME
+==================================================*/
+
+body.light{
+
+--bg:#F5F7FB;
+
+--bg-light:#FFFFFF;
+
+--card-bg:#FFFFFF;
+
+--text:#1F2937;
+
+--heading:#111827;
+
+--text-light:#6B7280;
+
+--border:rgba(0,0,0,.08);
+
+--border-hover:#4F8CFF;
+
+--shadow-sm:0 10px 25px rgba(0,0,0,.08);
+
+--shadow-md:0 20px 40px rgba(0,0,0,.10);
+
+--shadow-lg:0 30px 70px rgba(0,0,0,.12);
+
+}
+
+/*==================================================
+GLOBAL SELECTION
+==================================================*/
+
+::selection{
+
+background:var(--primary);
+
+color:#fff;
+
+}
